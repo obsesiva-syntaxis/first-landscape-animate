@@ -1,0 +1,136 @@
+body {
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 0;
+    overflow: hidden;
+}
+
+.container {
+    /* padding: 10px; */
+    background: rgb(255,255,255);
+background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(124,124,124,1) 100%);
+    position: relative;
+    /* margin: 50px auto; */
+    border: 5px solid #000;
+    width: 98vw;
+    height: 95vh;
+    /* background: rgb(249,100,0); */
+    /* background: linear-gradient(0deg, rgba(249,100,0,1) 0%, rgba(59,20,255,1) 100%); */
+    /* background-color: red; */
+    overflow: hidden;
+}
+
+.tree2 {
+    /* background-color: #000; */
+    /* border: 1px solid #000; */
+    /* opacity: .5; */
+    position: absolute;
+    background-image: url('./assets/arbol2-with-bg.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 350px;
+    height: 350px;
+    left: 200px;
+    bottom: -50px;
+    filter: hue-rotate(90deg);
+    animation: arbolito2 5s;
+    animation-timing-function: ease-out;
+    z-index: 100;
+    /* filter: drop-shadow(16px 16px 10px rgb(211, 5, 5)); */
+    /* color: red; */
+    
+    /* transform: scale(3); */
+    /* animation-iteration-count: infinite; */
+    /* left: ; */
+    /* right:; */
+}
+
+.tree3 {
+    /* background-color: #000; */
+    /* border: 1px solid #000; */
+    /* display: none; */
+    position: absolute;
+    background-image: url('./assets/arbol3.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 550px;
+    height: 550px;
+    left: -100px;
+    bottom: -50px;
+    filter: hue-rotate(90deg);
+    /* filter: drop-shadow(16px 16px 10px rgb(211, 5, 5)); */
+    /* color: red; */
+    
+    /* transform: scale(3); */
+    animation: arbolito3 5s;
+    animation-timing-function: ease-out;
+    /* animation-iteration-count: infinite; */
+    /* left: ; */
+    /* right:; */
+}
+.tree1 {
+    /* background-color: #000; */
+    /* border: 1px solid #000; */
+    /* display: none; */
+    position: absolute;
+    background-image: url('./assets/arbol1.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 550px;
+    height: 550px;
+    left: -100px;
+    bottom: -200px;
+    filter: hue-rotate(90deg);
+    /* filter: drop-shadow(16px 16px 10px rgb(211, 5, 5)); */
+    /* color: red; */
+    
+    /* transform: scale(3); */
+    animation: arbolito1 5s;
+    animation-timing-function: ease-out;
+    /* animation-iteration-count: infinite; */
+    /* left: ; */
+    /* right:; */
+}
+
+.tree3:hover{
+    cursor: pointer;
+    filter: drop-shadow(0 0 3px green)
+}
+.tree2:hover{
+    cursor: pointer;
+    filter: drop-shadow(0 0 3px red)
+}
+
+@keyframes arbolito2 {
+    0%{
+        transform: translateX(-420px); 
+    }
+
+    100%{
+        transform: translateX(0px); 
+    }
+}
+
+@keyframes arbolito3 {
+    0%{
+        transform: translateX(-100px); 
+
+    }
+
+    100%{
+        transform: translateX(0px); 
+    }
+}
+@keyframes arbolito1 {
+    0%{
+        transform: translateX(-400px); 
+
+    }
+
+    100%{
+        transform: translateX(0px); 
+    }
+}
